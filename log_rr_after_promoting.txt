@@ -1,0 +1,21 @@
+mysql> insert into MOCK_DATA (id, first_name, last_name) values (11, 'Kippie', 'Dyhouse');
+Query OK, 1 row affected (0.00 sec)
+mysql> select * from MOCK_DATA;
++------+------------+------------+
+| id   | first_name | last_name  |
++------+------------+------------+
+|    1 | Danyelle   | Insull     |
+|    2 | Vanessa    | Kinnar     |
+|    3 | Arleyne    | Kupka      |
+|    4 | Goraud     | Tidbold    |
+|    5 | Dyann      | Grigor     |
+|    6 | Trumann    | Kirtland   |
+|    7 | Levi       | Hoodless   |
+|    8 | Brockie    | Erasmus    |
+|    9 | Claudelle  | Filippazzo |
+|   10 | Kippie     | Dyhouse    |
+|   11 | Kippie     | Dyhouse    |
++------+------------+------------+
+11 rows in set (0.00 sec)
+
+mysql>

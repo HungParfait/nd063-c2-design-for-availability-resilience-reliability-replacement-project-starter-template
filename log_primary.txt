@@ -1,0 +1,69 @@
+ubuntu@ip-10-2-10-207:~$ mysql -h database-p1-433253181554.cnqvmk3kiley.us-east-1.rds.amazonaws.com -u admin -p -P 3306 -D udacity
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 336
+Server version: 8.0.32 Source distribution
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create table MOCK_DATA (
+    -> id INT,
+    -> first_name VARCHAR(50),
+    -> last_name VARCHAR(50)
+    -> );
+Query OK, 0 rows affected (0.12 sec)
+
+mysql> insert into MOCK_DATA (id, first_name, last_name) values (1, 'Danyelle', 'Insull');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into MOCK_DATA (id, first_name, last_name) values (2, 'Vanessa', 'Kinnar');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into MOCK_DATA (id, first_name, last_name) values (3, 'Arleyne', 'Kupka');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into MOCK_DATA (id, first_name, last_name) values (4, 'Goraud', 'Tidbold');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into MOCK_DATA (id, first_name, last_name) values (5, 'Dyann', 'Grigor');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into MOCK_DATA (id, first_name, last_name) values (6, 'Trumann', 'Kirtland');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into MOCK_DATA (id, first_name, last_name) values (7, 'Levi', 'Hoodless');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into MOCK_DATA (id, first_name, last_name) values (8, 'Brockie', 'Erasmus');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into MOCK_DATA (id, first_name, last_name) values (9, 'Claudelle', 'Filippazzo');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into MOCK_DATA (id, first_name, last_name) values (10, 'Kippie', 'Dyhouse');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from MOCK_DATA;
++------+------------+------------+
+| id   | first_name | last_name  |
++------+------------+------------+
+|    1 | Danyelle   | Insull     |
+|    2 | Vanessa    | Kinnar     |
+|    3 | Arleyne    | Kupka      |
+|    4 | Goraud     | Tidbold    |
+|    5 | Dyann      | Grigor     |
+|    6 | Trumann    | Kirtland   |
+|    7 | Levi       | Hoodless   |
+|    8 | Brockie    | Erasmus    |
+|    9 | Claudelle  | Filippazzo |
+|   10 | Kippie     | Dyhouse    |
++------+------------+------------+
+10 rows in set (0.00 sec)
+
+mysql>
